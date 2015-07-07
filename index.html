@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App Preview</title>
+    <meta name="viewport" content="
+          user-scalable=no,
+          initial-scale=1,
+          maximum-scale=1,
+          minimum-scale=1,
+          width=device-width">
+    <style>
+        .body {
+            margin: 0;
+            padding: 30px;
+            background: url('iphone6.png') no-repeat center 15px;
+            background-size: 364px auto;
+        }
+
+        .iframe {
+            padding-top: 64px;
+
+            width: 320px;
+            height: 568px;
+
+            display: block;
+            margin: auto;
+
+            overflow: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        @media (max-width: 420px) {
+            .body {
+                padding: 0;
+                background: none;
+            }
+
+            .iframe {
+                padding: 0;
+
+                width: 100vw;
+                height: 100vh;
+
+                display: block;
+                margin: auto;
+
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+<body class="body">
+    <iframe src="www/index.html" frameborder="0" class="iframe" scrolling="no" seamless="seamless"></iframe>
+</body>
+</html>
